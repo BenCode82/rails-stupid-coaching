@@ -1,0 +1,15 @@
+<h1> Stupid Coaching </h1>
+
+<div class="ms-3 pb-3">
+  <div id="question" class="border-left mb-3">
+    <%= params[:input] %>
+    <p>- You</p>
+  </div>
+
+  <div id="answer" class="border-left mb-3">
+    <p class="fw-bold"><%= @answer %></p>
+    <p>- Your coach</p>
+  </div>
+
+  <%= link_to "Ask a new question", "/ask" %>
+</div>
